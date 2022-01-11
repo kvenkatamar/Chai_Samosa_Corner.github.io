@@ -6,14 +6,15 @@
 }
 .subContainer-1, .subContainer-2{
     border: 2px solid black;
-    width: 1100px;
+    width: 80%;
     padding: 2px;
     margin: 3px auto;
 }
 .heading-1, .heading-2{
     border: 2px solid black;
     text-align: center;
-    width: 500px;
+    font-size: medium;
+    width: 44%;
     margin: auto;
 }
 li{
@@ -25,20 +26,29 @@ ul{
     margin-bottom: 0px;
 }
 .leftInput{
-    width: 250px;
-    margin: 0px;
+    width: 65%;
+    align-items: left;
+    margin: auto;
+    display: inline-block;
+}
+.hiddenLeftInput{
+    width: 65%;
+    align-items: left;
+    margin: auto;
     display: inline-block;
 }
 .pageContent{
     margin: 0px auto;
-    width: fit-content;
+    width: 44%;
 }
 .hiddenContent{
     margin: 0px auto;
-    width: 600px;
+    width: 44%;
 }
 .bill, .final-word{
     text-align: center;
+    font-size: medium;
+    font-weight: bolder;
 }
 .dotted-line{
     height: 1px;
@@ -46,4 +56,7 @@ ul{
 }
 .submit-btn{
     text-align: center;
+}
+.textBox{
+    text-align: right;
 }
