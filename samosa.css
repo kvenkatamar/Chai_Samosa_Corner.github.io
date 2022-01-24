@@ -1,62 +1,29 @@
-.container{
-    width: 99%;
-    border: 3px solid black;
-    padding: 4px;
-    margin: 2px auto;
-}
-.subContainer-1, .subContainer-2{
-    border: 2px solid black;
-    width: 80%;
-    padding: 2px;
-    margin: 3px auto;
-}
-.heading-1, .heading-2{
-    border: 2px solid black;
-    text-align: center;
-    font-size: medium;
-    width: 44%;
-    margin: auto;
-}
+/* Basic CSS */
 li{
-    list-style: none;
-    padding: 5px;
+    list-style-type: none;
 }
 ul{
     padding-inline-start: 0px;
-    margin-bottom: 0px;
 }
-.leftInput{
-    width: 65%;
-    align-items: left;
-    margin: auto;
+.container-1, .container-2{
+    border: 3px solid black;
+    width: 100%;
+}
+
+.header{
+    background-color: coral;
+    top: 0;
+    left: 0;
+    padding: 0 9px 0 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+.header-title{
     display: inline-block;
+    padding: 0 38% 0 5%;
 }
-.hiddenLeftInput{
-    width: 65%;
-    align-items: left;
-    margin: auto;
+.header-element{
     display: inline-block;
-}
-.pageContent{
-    margin: 0px auto;
-    width: 44%;
-}
-.hiddenContent{
-    margin: 0px auto;
-    width: 44%;
-}
-.bill, .final-word{
-    text-align: center;
-    font-size: medium;
-    font-weight: bolder;
-}
-.dotted-line{
-    height: 1px;
-    border-bottom: 2px dotted black;
-}
-.submit-btn{
-    text-align: center;
-}
-.textBox{
-    text-align: right;
+    padding: 0px 3%;
 }
