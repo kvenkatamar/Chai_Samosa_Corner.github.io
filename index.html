@@ -7,77 +7,67 @@
         <title>Chai-Samosa Walla</title>
         <link rel="stylesheet" href="samosa.css">
         <script src="samosa.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="container">
-            <div class="subContainer-1">
-                <h1 class="heading-1">
-                    CHAI - SAMOSA COUNTER
+        <header class="header">
+            <ul>
+                <li class="header-title">
+                    ARAKU CHAI
+                </li>
+                <li class="header-element">
+                    HOME
+                </li><span>|</span>
+                <li class="header-element">
+                    SAMOSA COUNTER
+                </li><span>|</span>
+                <li class="header-element">
+                    CHAI COUNTER
+                </li><span>|</span>
+                <li class="header-element">
+                    ABOUT
+                </li>
+            </ul>
+        </header>
+        <div class="container-1">
+            <div>
+                <h1>
+                    SAMOSA COUNTER
                 </h1>
-                <ul>
-                    <li class="pageContent">
-                        <div class="leftInput">
-                            Quantity Available
-                        </div>
-                        <input type="text" id="show-1" class="textBox">
-                    </li>
-                    <li class="pageContent">
-                        <div class="leftInput">
-                            Quantity Sold
-                        </div>
-                        <input type="text" id="show-2" class="textBox">
-                    </li>
-                    <li class="pageContent">
-                        <div class="leftInput cost">
-                            Cost per SAMOSA
-                        </div>
-                        <input type="number" id="perCost" class="textBox">
-                    </li>
-                    <li class="pageContent">
-                        <div class="leftInput quantity">
-                            Quantity Required
-                        </div>
-                        <input type="text" id="required" class="textBox">
-                    </li>
-                    <li class="submit-btn">
-                        <input type="button" value="SUBMIT">
-                    </li>
-                </ul>
             </div>
-            <hr>
-            <div class="subContainer-2">
-                <h1 class="heading-2">
+            <ul>
+                <li>
+                    Quantity Available
+                    <input type="text">
+                </li>
+                <li>
+                    Quantity Sold
+                    <input type="text">
+                </li>
+                <li>
+                    Cost per SAMOSA
+                    <input type="text">
+                </li>
+                <li>
+                    Quantity Required
+                    <input type="text">
+                </li>
+                <li>
+                    <input type="button" value="SUBMIT" onclick="displayInfo()">
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="container-2">
+            <div>
+                <h1>
                     RECEIPT
                 </h1>
-                <ul>
-                    <li class="hiddenContent">
-                        <div class="hiddenLeftInput">
-                            Number of SAMOSA Ordered
-                        </div>
-                        <span class="samosaOrdered"></span>
-                    </li>
-                    <li class="hiddenContent">
-                        <div class="hiddeLeftInput">
-                            Cost per SAMOSA
-                        </div>
-                        <span class="costPer"></span>
-                    </li>
-                    <div class="dotted-line"></div>
-                    <li class="hiddenContent">
-                        <div class="hiddenLeftInput">
-                            Total Cost
-                        </div>
-                        <span class="totalCost"></span>
-                    </li>
-                </ul>
-                <div class="dotted-line"></div>
-                <h2 class="bill">
-                    PLEASE! Pay 10x rupees at the COUNTER
-                </h2>
-                <h3 class="final-word">
-                    --------  VISIT  AGAIN  ----------
-                </h3>
             </div>
+            <p>Quantity Sold<span>$15</span></p>
+            <p>Cost per SAMOSA<span>$15</span></p>
+            <hr>    
+            <p>TOTAL<span>$15</span></p>
         </div>
     </body>
 </html>
