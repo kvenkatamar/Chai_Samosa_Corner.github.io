@@ -8,3 +8,10 @@ var change = () => {
     required = document.querySelector("#required").value;
 }
 /* Showing info by DHTML */
+var displayInfo = () => {
+    change();
+    document.querySelector(".samosaOrdered").innerHTML = required;
+    document.querySelector(".costPer").innerHTML = perCost;
+    var totalCost = required * perCost;
+    document.querySelector(".totalCost").innerHTML = totalCost;
+}
