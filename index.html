@@ -12,57 +12,61 @@
     <body>
         <header class="header">
             <ul>
-                <li class="header-title">
-                    ARAKU CHAI
-                </li>
                 <li class="header-element">
                     HOME
                 </li><span>|</span>
                 <li class="header-element">
-                    SAMOSA COUNTER
+                    Samosa Corner 
                 </li><span>|</span>
                 <li class="header-element">
-                    CHAI COUNTER
+                    Chai Corner
                 </li><span>|</span>
                 <li class="header-element">
                     ABOUT
                 </li>
+                <li class="header-title">
+                    ARAKU CHAI
+                </li>
             </ul>
         </header>
         <div class="container-1">
-            <div>
-                <h1>
-                    SAMOSA COUNTER
-                </h1>
+            <div class="innerContainer">
+                SAMOSA COUNTER
             </div>
-            <ul>
+            <ul class="innerContainer-1">
                 <li>
+                    <div class="left-content">
                     Quantity Available
+                    </div>
                     <input type="text">
                 </li>
                 <li>
+                    <div class="left-content">
                     Quantity Sold
+                    </div>
                     <input type="text">
                 </li>
                 <li>
+                    <div class="left-content">
                     Cost per SAMOSA
+                    </div>
                     <input type="text">
                 </li>
                 <li>
+                    <div class="left-content">
                     Quantity Required
+                    </div>
                     <input type="text">
                 </li>
-                <li>
-                    <input type="button" value="SUBMIT" onclick="displayInfo()">
+                <li class="btn-block">
+                    <input type="button" value="SUBMIT" class="btn" onclick="displayInfo()">
                 </li>
             </ul>
         </div>
         <hr>
         <div class="container-2">
-            <div>
-                <h1>
-                    RECEIPT
-                </h1>
+            <div class="innerContainer">
+                RECEIPT
             </div>
             <p>Quantity Sold<span>$15</span></p>
             <p>Cost per SAMOSA<span>$15</span></p>
