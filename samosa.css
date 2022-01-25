@@ -53,14 +53,14 @@ ul{
     padding: auto;  
 }
 .left-content{
-    width: 800px;
+    width: 250px;
     display: inline-block;
     padding: 10px;
     margin: 3px auto;
 }
 .innerContainer-1{
     margin: auto;
-    width: px;
+    width: 500px;
 }
 .btn{
     width: 100%;
