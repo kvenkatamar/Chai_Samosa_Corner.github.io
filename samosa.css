@@ -71,7 +71,7 @@ ul{
     width: 90%;
 }
 .left-content{
-    width: 125px;
+    width: 140px;
     display: inline-block;
     padding: 10px;
     margin: 3px auto;
@@ -79,7 +79,7 @@ ul{
 }
 .input-box{
     float: right;
-    width: 170px;
+    width: 100px;
     margin: 10px;
 }
 .output-box{
