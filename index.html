@@ -13,19 +13,19 @@
         <header class="header">
             <ul>
                 <li class="header-element">
-                    HOME
-                </li><span>|</span>
+                    Home
+                </li><span class="dash">|</span>
                 <li class="header-element">
                     Samosa Corner 
-                </li><span>|</span>
+                </li><span class="dash">|</span>
                 <li class="header-element">
                     Chai Corner
-                </li><span>|</span>
+                </li><span class="dash">|</span>
                 <li class="header-element">
-                    ABOUT
+                    About
                 </li>
                 <li class="header-title">
-                    ARAKU CHAI
+                    GRIET CANTEEN
                 </li>
             </ul>
         </header>
@@ -38,25 +38,25 @@
                     <div class="left-content">
                     Quantity Available
                     </div>
-                    <input type="text">
+                    <input type="text" class="input-box" id="show-1">
                 </li>
                 <li>
                     <div class="left-content">
                     Quantity Sold
                     </div>
-                    <input type="text">
+                    <input type="text" class="input-box" id="show-2">
                 </li>
                 <li>
                     <div class="left-content">
                     Cost per SAMOSA
                     </div>
-                    <input type="text">
+                    <input type="text" class="input-box" id="I-perCost">
                 </li>
                 <li>
                     <div class="left-content">
                     Quantity Required
                     </div>
-                    <input type="text">
+                    <input type="text" class="input-box" id="required">
                 </li>
                 <li class="btn-block">
                     <input type="button" value="SUBMIT" class="btn" onclick="displayInfo()">
@@ -68,10 +68,30 @@
             <div class="innerContainer">
                 RECEIPT
             </div>
-            <p>Quantity Sold<span>$15</span></p>
-            <p>Cost per SAMOSA<span>$15</span></p>
-            <hr>    
-            <p>TOTAL<span>$15</span></p>
+            <div class="innerContainer-1">
+                <p>
+                    <div class="left-content">
+                        Quantity Sold
+                    </div>
+                    <span class="output-box" id="sold"></span>
+                </p>
+                <p>
+                    <div class="left-content">
+                        Cost per SAMOSA
+                    </div>
+                    <span class="output-box" id="perCost"></span>
+                </p>
+                <hr>    
+                <p>
+                    <div class="left-content">
+                        TOTAL
+                    </div> 
+                    <span class="output-box" id="total"></span>
+                </p>
+                <p align="right">
+                    <input type="button" value="Print" class="printbtn">
+                </p>
+            </div>
         </div>
     </body>
 </html>
