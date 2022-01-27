@@ -1,17 +1,24 @@
 /* Reading Values in input boxes */
-var unchange = () => {
+var change = () => {
     availQuantity = document.querySelector("#show-1").value;
     quantitySold = document.querySelector("#show-2").value;
 }
-var change = () => {
-    perCost = document.querySelector("#perCost").value;
+var input = () => {
+    perCost = document.querySelector("#I-perCost").value;
     required = document.querySelector("#required").value;
 }
 /* Showing info by DHTML */
 var displayInfo = () => {
+    input();
     change();
-    document.querySelector(".samosaOrdered").innerHTML = required;
-    document.querySelector(".costPer").innerHTML = perCost;
+    if(required !=''){
+        document.querySelector(".container-2").style.display = "block";
+    }
+    document.querySelector("#sold").innerHTML = required+"/-";
+    document.querySelector("#perCost").innerHTML = perCost+"/-";
     var totalCost = required * perCost;
-    document.querySelector(".totalCost").innerHTML = totalCost;
+    document.querySelector("#total").innerHTML = totalCost+"/-";
+    document.querySelector("#show-1").value = document.querySelector("#show-1").value - document.querySelector("#required").value;
+    document.querySelector("#show-2").value = parseInt(document.querySelector("#show-2").value) + parseInt(document.querySelector("#required").value);
+    document.querySelector("#required").value = '';
 }
